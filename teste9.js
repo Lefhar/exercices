@@ -12,7 +12,7 @@ while (entrer) {
     //nombre de saisi
 nombre = nombre + 1;
 //pour l'affichage de la numérotation
-nbr++
+nbr = nbr + 1;
    } else {
        //on quitte la boucle
 break;
