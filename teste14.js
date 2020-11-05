@@ -4,4 +4,4 @@ console.log(nbtb)
 for(i=0; i<nbtb; i++){
      tableau[i] = window.prompt(" entrer vos "+nbtb+"élément");
 }
-document.write(i+"élément du tableau"+tableau+" teste" );
+document.write(i+"élément du tableau "+tableau+);
