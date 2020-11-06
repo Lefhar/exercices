@@ -47,6 +47,7 @@ GetInteger();
 SaisieTab(integer, itab);
 
 var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
+while (choix >= 1){
 if(choix==1){
     AfficheTab();  
     var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
@@ -58,4 +59,7 @@ if(choix==1){
 }else if(choix==3){
     InfoTab();
     var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
+}else{
+    var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
+}
 }
