@@ -8,22 +8,25 @@ function InitTab(integer){
            itab.splice(0, integer);       
         }
 function SaisieTab(integer,itab){//saisi des éléments
-    var n = integer
-    var tableau = itab
-    for(var i=0; i<n;i++){
+    var content = '';
+    for(var i=0; i<integer;i++){
         // on entre dans le tableau les éléments jusqu'a temps qu'on arrive au nombre inscrit juste avant
-         tableau[i] = window.prompt("entrer le mot"+i);
+        content = window.prompt('indiquer une valeur à entrer dans le tableau :');
+        var arrayPush = itab.push(content);
+        console.log(arrayPush);
     }
-    table =  tableau;
+   
 }
-    function AfficheTab(table){//on affiche le tableau
-        //on demande de séléctionner un élément du tableau
-  select = parseInt(window.prompt(`voici vos mots ${table}  entrer le Numéro  que vous souhaitez afficher`));
-        }
+    function AfficheTab(itab){//on affiche le tableau
+        console.log(itab);
+        alert(itab.join(', '));
+     
+ }
 
    function RechercheTab(select){
-      var mot = table[select]
-document.write("le mot choisi c'est "+mot)
+    select = parseInt(window.prompt(`Afficher un index choisi`));
+    var retab = table[select]
+
    } 
    function InfoTab(table){
        //le tableau début a 0
@@ -39,7 +42,18 @@ document.write("le mot choisi c'est "+mot)
    }
 GetInteger();
  InitTab(integer);
-SaisieTab(integer,itab);
-AfficheTab(table);
-RechercheTab(select);
-InfoTab(table);
+SaisieTab(integer, itab);
+var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
+if(choix==1){
+    AfficheTab();  
+    var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
+
+}else if(choix==2){
+    RechercheTab();
+    var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
+
+}else if(choix==3){
+    InfoTab();
+    var choix= parseInt(window.prompt("choisissez une option -1 afficher le tableau -2 afficher un index choisi -3 afficher le max et la moyenne des postes entrer"))
+}
+
