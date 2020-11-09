@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Formulaire de contact</title>
 </head>
 <body>
-    <form action="" method="POST" >
-        Société : <input type="text" id="societe" name="societe" placeholder="entrer le nom de votre société"><br>
-        Personne à contacter <input type="text" id="pcontact" name="pcontact" placeholder="entrer une personne à contacter"><br>
-Adresse de l'entreprise : <textarea name="adresse" id="" cols="30" rows="10"></textarea>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+    <form action=""  class="form-inline" method="POST" id="formulaire" name="formulaire" onsubmit="verif();" >
+        <fieldset class="border  border-dark p-2">
+        <legend>* Ces zones sont obligatoires pour envoyé le formulaire</legend>
+        <div class="form-group">
+        <label for="societe">Société :</label> 
+        <div class="col-sm-8 pb-2"><input class="form-control" type="text" id="societe" name="societe" placeholder="entrer le nom de votre société"> <span class="text-danger">*</span>
+    </div>
+ </div>
+    <div class="form-group">
+        <label for="pcontact">Personne à contacter : </label>
+        <div class="col-sm-8 pb-2">
+       <input type="text" id="pcontact" class="form-control" name="pcontact" placeholder="entrer le nom d'une personne à contacter"> <span class="text-danger">*</span>
+ 
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="adresse">Adresse de l'entreprise : </label>
+        <div class="col-sm-6 pb-2">
+    <textarea name="adresse" id="adresse" class="form-control" placeholder="Votre adresse exemple 10 rue de la poupée qui pleure"></textarea><br>
+</div>
+        </div>
+  <div class="form-group">
+    
+ <label for="cp">Code postal : </label>
+ <div class="col-sm-10 pb-2">
+     <input type="text" id="cp" name="cp" class="form-control" placeholder="Entrer votre code postal"> <span class="text-danger">*</span>
+ </div>
+</div>
+ <div class="form-group">
+ <label for="ville">Ville : </label>
+ <div class="col-sm-10 pb-2">
+     <input type="text" name="ville" id="ville" class="form-control" placeholder="Entre votre ville"> <span class="text-danger">*</span>
+ </div>
+</div>
+ <div class="form-group">
+
+ <label for="tel">Téléphone : </label>
+ <div class="col-sm-10 pb-2">
+     <input type="text" name="tel" class="form-control" id="tel" placeholder="votre numéro de téléphone"> <span class="text-danger">*</span>
+ </div></div>
+    <div class="form-group pb-2">
+        <div class="col-sm-2">
+ <label for="environnement">Séléctionnez l'environnement technique du projet : </label></div>
+ <div class="col-sm-3">
+<select name="environnement" id="environnement" class="form-control">
+    <option>Choisissez</option>
+    <option value="Access">Access</option>
+    <option value="java">java</option>
+    <option value="Delphi">Delphi</option>
+    <option value="Windev">Windev</option>
+    <option value="Visual Basic">Visual Basic</option>
+    <option value="Power Builder">Power Builder</option>
+</select>
+ </div>
+ <textarea name="commentaire" id="commentaire" class="form-control" placeholder="expliquez votre problème"></textarea>
+</div>
+
+<button type="submit" class="btn btn-success" >Envoyer</button> <button type="reset"  class="btn btn-danger" >Annuler</button>
+</fieldset>
     </form>
+    </div></div></div>
 <script src="teste21.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
