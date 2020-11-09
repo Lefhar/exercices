@@ -11,7 +11,7 @@ if(cp.length < 5 ){
  var controlcp = true;
 }
 if(pcontact.length < 1 ){
-    document.getElementById("dpcontact").innerHTML="<div class=\"alert alert-danger\" role=\"alert\">Entrez le nom d'une personne a contacter</div>";
+    document.getElementById("dpcontact").innerHTML="<div class=\"alert alert-danger\" role=\"alert\">Entrez le nom d'une personne à contacter</div>";
     var controlpcontact = false;
 }else{
     var controlpcontact = true;
