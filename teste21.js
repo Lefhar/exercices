@@ -18,6 +18,7 @@ if (verif.exec(email) == null){
     var controlmail = false;
 }else{
     document.getElementById("email").className = "form-control is-valid";
+    document.getElementById("demail").style.display = 'none';
  var controlmail = true;
 } 
 if (ctrcp.exec(cp) == null){
@@ -26,6 +27,7 @@ if (ctrcp.exec(cp) == null){
     document.getElementById("cp").className = "form-control is-invalid";
 }else{
     document.getElementById("cp").className = "form-control is-valid";
+    document.getElementById("dcp").style.display = 'none';
  var controlcp = true;
 }
 if (ctrpcontact.exec(pcontact) == null){
@@ -34,6 +36,7 @@ if (ctrpcontact.exec(pcontact) == null){
     document.getElementById("pcontact").className = "form-control is-invalid";
 }else{
     document.getElementById("pcontact").className = "form-control is-valid";
+    document.getElementById("dpcontact").style.display = 'none';
     var controlpcontact = true;
 }
 if (ctrsociete.exec(societe) == null){
@@ -42,6 +45,7 @@ if (ctrsociete.exec(societe) == null){
     document.getElementById("societe").className = "form-control is-invalid";
 }else{
     document.getElementById("societe").className = "form-control is-valid";
+    document.getElementById("dsociete").style.display = 'none';
     var controlsociete = true;
 }
  if (ctrville.exec(ville) == null){
@@ -50,6 +54,7 @@ if (ctrsociete.exec(societe) == null){
     document.getElementById("ville").className = "form-control is-invalid";
 }else{
     document.getElementById("ville").className = "form-control is-valid";
+    document.getElementById("dville").style.display = 'none';
     var controlville = true;
 }
 if (ctrtel.exec(tel) == null){
@@ -57,6 +62,7 @@ if (ctrtel.exec(tel) == null){
     document.getElementById("tel").className = "form-control is-invalid";
 }else{
     document.getElementById("tel").className = "form-control is-valid";
+    document.getElementById("dtel").style.display = 'none';
     var controltel = true;
 }
 if(controlcp == true  &&controlmail == true&&controlpcontact == true &&controlcp == true &&controlsociete == true &&controltel == true){
